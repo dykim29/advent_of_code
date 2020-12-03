@@ -1,8 +1,6 @@
 def main():
     f = open("input.txt", "r")
-    x = []
-    for line in f.readlines():
-        x.append(line[:-1])
+    x = f.read().splitlines()
 
     n_valid = 0
     for i in x:

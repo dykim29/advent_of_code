@@ -3,6 +3,7 @@ from typing import List
 
 import numpy as np
 
+
 class File:
     """
     If size is None, is a directory; otherwise file.
@@ -52,7 +53,6 @@ def parse_input(x):
 def get_dir_sizes(list_of_all_dirs):
     dir_sizes_dict = {}
     for directory in list_of_all_dirs:
-
         def _get_size_of_one_dir(dir):
             files = [i for i in dir.contents if i.size is not None]
             dirs = [i for i in dir.contents if i.size is None]
